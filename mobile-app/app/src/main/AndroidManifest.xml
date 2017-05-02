@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.asu.jkhines1.dssr">
+
+    <!-- To sign in and register with a remote API -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DataActivity"
+            android:label="@string/title_activity_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeviceActivity"
+            android:label="@string/title_activity_device"
+            android:parentActivityName=".DataActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.asu.jkhines1.dssr.DataActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.asu.jkhines1.dssr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.asu.jkhines1.dssr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DataDetailActivity"
+            android:label="@string/title_activity_data_detail"
+            android:parentActivityName=".DataActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.asu.jkhines1.dssr.DataActivity" />
+        </activity>
+        <activity
+            android:name=".BehaviorActivity"
+            android:label="@string/title_activity_behavior"
+            android:parentActivityName=".BehaviorActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.asu.jkhines1.dssr.DataActivity" />
+        </activity>
+        <activity
+            android:name=".TrendsActivity"
+            android:label="@string/title_activity_graph"
+            android:parentActivityName=".DataActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.asu.jkhines1.dssr.DataActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Sensory Recorder</string>
+    <string name="action_behavior">Behavior</string>
+    <string name="action_data">Data</string>
+    <string name="action_devices">Devices</string>
+    <string name="action_trends">Trends</string>
+    <string name="action_logout">Logout</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_rating">Rating</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_save_rating">Save Rating</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_rating">The rating is invalid, use values 1 - 10</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">Register</string>
+    <string name="action_register">Register your account</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="title_activity_behavior">Rate Behavior</string>
+    <string name="title_activity_data">Data Summary</string>
+    <string name="title_activity_device">Your Devices</string>
+    <string name="title_activity_data_detail">Data Details</string>
+    <string name="title_activity_graph">Trends</string>
+</resources>

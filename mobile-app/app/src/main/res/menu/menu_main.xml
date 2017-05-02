@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.asu.jkhines1.dssr.MainActivity">
+    <item
+        android:id="@+id/action_behavior"
+        android:orderInCategory="100"
+        android:title="@string/action_behavior"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_trends"
+        android:orderInCategory="100"
+        android:title="@string/action_trends"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_devices"
+        android:orderInCategory="100"
+        android:title="@string/action_devices"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_data"
+        android:orderInCategory="100"
+        android:title="@string/action_data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+</menu>

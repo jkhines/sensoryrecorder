@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:oauth="http://www.springframework.org/schema/security/oauth2"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/security/oauth2 http://www.springframework.org/schema/security/spring-security-oauth2-2.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+    <bean id="jpaAdapter" class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter">
+        <property name="databasePlatform" value="org.eclipse.persistence.platform.database.PostgreSQLPlatform" />
+        <property name="showSql" value="true" />
+    </bean>
+
+    <!-- Auth database -->
+    <bean id="authDataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="jdbcUrl" value="jdbc:postgresql://#{systemEnvironment['AUTHDBHOST']}/#{systemEnvironment['AUTHDATABASE']}" />
+        <property name="username" value="#{systemEnvironment['AUTHDBUSER']}" />
+        <property name="password" value="#{systemEnvironment['AUTHDBPASSWORD']}" />
+    </bean>
+
+    <bean id="authEntityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="packagesToScan" value="edu.asu.jkhines1.*" />
+        <property name="persistenceProviderClass" value="org.eclipse.persistence.jpa.PersistenceProvider" />
+        <property name="dataSource" ref="authDataSource" />
+        <property name="jpaVendorAdapter" ref="jpaAdapter" />
+        <property name="jpaPropertyMap">
+            <map>
+                <entry key="eclipselink.weaving" value="false" />
+                <entry key="eclipselink.logging.level" value="INFO" />
+                <entry key="eclipselink.logging.level.sql" value="INFO" />
+                <entry key="eclipselink.cache.shared.default" value="false" />
+            </map>
+        </property>
+        <property name="persistenceUnitName" value="authPersistenceUnit" />
+    </bean>
+    
+    <bean id="authTransactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="authEntityManagerFactory" />
+        <qualifier value="transactionManager" />
+    </bean>
+
+    <!-- API database -->
+    <bean id="apiDataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="jdbcUrl" value="jdbc:postgresql://#{systemEnvironment['APIDBHOST']}/#{systemEnvironment['APIDATABASE']}" />
+        <property name="username" value="#{systemEnvironment['APIDBUSER']}" />
+        <property name="password" value="#{systemEnvironment['APIDBPASSWORD']}" />
+    </bean>
+
+    <bean id="apiEntityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="packagesToScan" value="edu.asu.jkhines1.*" />
+        <property name="persistenceProviderClass" value="org.eclipse.persistence.jpa.PersistenceProvider" />
+        <property name="dataSource" ref="apiDataSource" />
+        <property name="jpaVendorAdapter" ref="jpaAdapter" />
+        <property name="jpaPropertyMap">
+            <map>
+                <entry key="eclipselink.weaving" value="false" />
+                <entry key="eclipselink.logging.level" value="INFO" />
+                <entry key="eclipselink.logging.level.sql" value="INFO" />
+                <entry key="eclipselink.cache.shared.default" value="false" />
+            </map>
+        </property>
+        <property name="persistenceUnitName" value="apiPersistenceUnit" />
+    </bean>
+
+    <bean id="apiTransactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="apiEntityManagerFactory" />
+        <qualifier value="transactionManager2" />
+    </bean>
+</beans>
