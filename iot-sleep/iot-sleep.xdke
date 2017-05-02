@@ -1,0 +1,125 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "currentBuildConfiguration": null,
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "editorTab": {
+    "currentEditorMode": 0
+  },
+  "iot-tab": {
+    "fileStatus": {
+      ".gitignore": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": ".gitignore"
+      },
+      "icon.png": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "iot-sleep.xdk": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "iot-sleep.xdk"
+      },
+      "iot-sleep.xdke": {
+        "previousModTime": 1491362500771,
+        "modified": 1491362500771,
+        "seen": true,
+        "name": "iot-sleep.xdke"
+      },
+      "LICENSE.md": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "LICENSE.md"
+      },
+      "main.js": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "README.md"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "lib/api_client.js": {
+        "previousModTime": 1490069792874,
+        "modified": 1490069792874,
+        "seen": true,
+        "name": "lib/api_client.js"
+      },
+      "config.js": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "config.js"
+      },
+      "iot-sleep.service": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "iot-sleep.service"
+      },
+      "xdk-daemon.service": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "xdk-daemon.service"
+      }
+    },
+    "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1491362609957
+      },
+      "LICENSE.md": {
+        "previousModTime": 1491362609957
+      },
+      "main.js": {
+        "previousModTime": 1491362609957
+      },
+      "package.json": {
+        "previousModTime": 1491362609957
+      },
+      "README.md": {
+        "previousModTime": 1491362609957
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1491362609957
+      },
+      "lib/api_client.js": {
+        "previousModTime": 1491362609957
+      },
+      "config.js": {
+        "previousModTime": 1491362609957
+      },
+      "iot-sleep.service": {
+        "previousModTime": 1491362609957
+      },
+      "xdk-daemon.service": {
+        "previousModTime": 1491362609957
+      }
+    }
+  }
+}

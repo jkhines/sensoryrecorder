@@ -1,0 +1,98 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "currentBuildConfiguration": null,
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "editorTab": {
+    "currentEditorMode": 0
+  },
+  "iot-tab": {
+    "fileStatus": {
+      ".gitignore": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": ".gitignore"
+      },
+      "icon.png": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "iot-sound.xdk": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "iot-sound.xdk"
+      },
+      "iot-sound.xdke": {
+        "previousModTime": 1491366641688,
+        "modified": 1491366641688,
+        "seen": true,
+        "name": "iot-sound.xdke"
+      },
+      "LICENSE.md": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "LICENSE.md"
+      },
+      "main.js": {
+        "previousModTime": 1491368356762,
+        "modified": 1491368356762,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "README.md"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "lib/api_client.js": {
+        "previousModTime": 1490845326528,
+        "modified": 1490845326528,
+        "seen": true,
+        "name": "lib/api_client.js"
+      },
+      "config.js": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "config.js"
+      },
+      "iot-sound.service": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "iot-sound.service"
+      },
+      "xdk-daemon.service": {
+        "previousModTime": 1490054448000,
+        "modified": 1490054448000,
+        "seen": true,
+        "name": "xdk-daemon.service"
+      }
+    },
+    "boardFileStatus": {
+      "main.js": {
+        "previousModTime": 1491368360106
+      }
+    }
+  }
+}
